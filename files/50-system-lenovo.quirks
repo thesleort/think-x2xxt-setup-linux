@@ -1,0 +1,4 @@
+[Lenovo X201 Tablet]
+MatchName=At Translated Set 2 keyboard
+MatchDMIModalias=dmi:*svnLENOVO:*pvrThinkPadX201Tablet:*
+ModelTabletModeNoSuspend=1

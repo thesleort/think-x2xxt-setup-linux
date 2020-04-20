@@ -12,6 +12,8 @@ if [ $1 = "x201t" ]; then
     # Enable bezel buttons between restarts
     cp files/thinkpadtabletkeys.service /etc/systemd/system/
     systemctl enable thinkpadtabletkeys.service
+
+    cat files/50-system-lenovo.quirks >> /usr/share/libinput/50-system-lenovo.quirks
     
     echo "Please restart the session by loggin out or rebooting"
 elif [ $1 = "x230t" ]; then
