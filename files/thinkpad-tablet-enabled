@@ -1,0 +1,7 @@
+# /etc/acpi/events/thinkpad-tablet-enabled
+# This is called when the lid is placed in tablet position on
+# Lenovo ThinkPad X230 Tablet
+
+event=video/tabletmode TBLT 0000008A 00000001
+#event=video/tabletmode*
+action=/etc/acpi/thinkpad-touchpad-twist-mode.sh 0

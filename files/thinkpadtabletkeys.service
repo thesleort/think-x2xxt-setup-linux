@@ -1,0 +1,11 @@
+[Unit]
+Description=Set keycodes for X201 Tablet screen rotation
+After=systemd-user-sessions.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=True
+ExecStart=/bin/setkeycodes 67 184 6c 185 68 186 66 187
+
+[Install]
+WantedBy=graphical.target 
